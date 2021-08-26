@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="~/Content/bootstrap-grid.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.rtl.css" rel="stylesheet" />
+    <link href="~/Content/ui-bootstrap-csp.css" rel="stylesheet" />
+    <link href="~/Content/Style.css" rel="stylesheet" />
+    <script src="~/Scripts/react/react.js"></script>
+    <script src="~/Scripts/react/react-dom-server.js"></script>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.KatrinaKaifFanite</title>
+</head>
+<body>
+    <div>
+        <div style="background-color:lightpink">
+            <div style="color:ghostwhite">
+                <img src="~/ImageFolder/Katrina Kaif 2.jpg" />
+                <h6>Katrina Kaif Fansite</h6>
+            </div>
+            <nav>
+                @Html.ActionLink("Home","Home","Home")
+                @Html.ActionLink("Gallery","Gallery","Home")
+                @Html.ActionLink("News","News","Home")
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div style="background-color:lightpink">
+                    <div style="color:ghostwhite">
+                        <h1>Welcome to Katrina Kaif Fansite</h1>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        @RenderBody()
+    </div>
+</body>
+</html>
